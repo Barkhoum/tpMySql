@@ -12,3 +12,29 @@
 ####8. Lister les villes et bureau dont le bureau se termine par 00
 ####9. Lister les villes dont le nom est composé (ex: champs sur marne)
 ####10. Lister les villes et bureau dont le bureau est compris entre 50000 et 60000 
+2°) Introduire les alias (ou étiquettes) avec AS, la directive ORDER BY avec ASC et DESC et le
+prédicat DISTINCT
+ ( Nom de tables ou d'alias si des espaces dedans, chaîne constante entre ' ' )
+1. Lister les villes et département (avec alias) commençant par la lettre p
+2. Lister les villes de la Seine et Marne en mettant un alias « villes de la Seine et Marne »
+3°) Introduire les fonctions de groupe (ou d'agrégats) Count(), Sum(), Max(), Min() et Avg()
+- sur toute une table (ou une sélection): ne rend qu'une valeur (une colonne; une ligne)
+- avec la clause GROUP BY et sa restriction HAVING: rend autant de lignes que de groupes créées,
+une colonne ou deux si on visualise la valeur de l'attribut de groupage (elles ne peuvent pas être
+visualisées avec d'autres champs, excepté celui servant à la clause GROUP BY) .
+"Having est au group by ce que where est au select"
+1. Compter les villes par département
+2. Compter le nombre de villes pour le département de la Seine et Marne
+3. Lister et compter les villes qui sont homonymes
+4°) Select imbriqués:
+a- le select imbriqué est mis dans la clause where du select de niveau supérieur (ou dans la clause having
+du group by de niveau supérieur).
+- s'il rend une seule valeur (cas par exemple des fonctions de groupe simples) il sera utilisable avec les
+opérateurs de comparaison
+- s'il rend plus d'une valeur (cas par exemple des fonctions de groupe utilisées avec group by), il ne sera
+utilisable qu'avec l'opérateur IN
+b- s'il rend un jeu de valeurs, il peut être la source de la requête supérieure (dans son from).
+1. Compter le nombre de villes pour le département de Paris
+2. résoudre le problème du doublon du 16 ème arrondissement
+3. Lister la ville possédant le plus petit code postal et celle possédant le plus grand
+4. Lister les villes, bureaux et départements des villes qui ont des homonymes 
