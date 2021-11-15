@@ -1,0 +1,14 @@
+#Consulter une table: la base CodesPostaux (- Une seule table des codes Postaux -) 
+##1°) Ecrire des requêtes de sélection simples
+ (SELECT avec clause WHERE et opérateurs de comparaison, LIKE, BETWEEN, IN et IS NULL)
+ SELECT col1, col2, …. FROM table WHERE condition 
+####1. Lister tout par ordre alphabétique des villes
+####2. Lister sans répétition les départements par ordre alphabétique inversé
+####3. Lister sans répétition les départements commençant par S
+####4. Lister sans répétition les départements commençant par S ou M
+####5. Lister les villes triées par ordre croissant du département de la Nièvre
+####6. Lister les villes et dep. des départements de la Gironde, du Loiret ou de la Marne
+####7. Lister les villes et bureau dont le bureau comporte 5 chiffres
+####8. Lister les villes et bureau dont le bureau se termine par 00
+####9. Lister les villes dont le nom est composé (ex: champs sur marne)
+####10. Lister les villes et bureau dont le bureau est compris entre 50000 et 60000 
